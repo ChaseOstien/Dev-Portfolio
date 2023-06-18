@@ -1,0 +1,139 @@
+:root {
+    /*Create variables for consistent colors and rules in the webpage.*/
+    --light-blue: #93cbcb;
+    --gray: #38343c;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5%;
+    background-color: var(--gray);
+    
+}
+
+.header h1 {
+    font-size: 250%;
+    background-color: var(--light-blue);
+    padding: 10px 10px 10px 50px;
+    color: var(--gray);
+    border-radius: 10px;
+}
+
+.header nav {
+    float: right;
+    justify-content: space-between;
+    margin-right: 50px;
+    font-size: larger;
+    min-width: 300px;
+}
+
+nav ul {
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+nav li {
+    display: inline-flex;
+    padding-right: 20px;
+}
+
+.header nav a {
+    color: var(--light-blue);
+    font-weight: 100%;
+    text-decoration: none;
+    border-bottom: 3px solid;
+    padding-bottom: 2px;
+}
+
+.background-image {
+    background-image: url(./images/Background-Image3.png);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    background-color: var(--light-blue);
+    display: flex;
+    width: fit-content;
+    float: right;
+    font-size: 200%;
+    color: var(--gray);
+    margin-right: 50px;
+    margin-top: 185px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.aboutme-content {
+    display: inline-block;
+    margin-right: 80px;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+.aboutme-content p {
+    line-height: 1.5;
+}
+
+.contact-me {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-title {
+    position: relative;
+    color: var(--gray);
+    font-size: 175%;
+    padding-right: 20px;
+    inline-size: min-content;
+    text-align: right;
+    margin-right: 40px;
+}
+
+.section-title h2 {
+    font-size: 200%;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    bottom: 0;
+    background-color: var(--gray);
+    }
+
+.contact-info {
+    margin: 40px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    font-weight: 175%;
+    font-size: larger;
+    border-bottom: 3px solid;
+    padding-bottom: 2px;
+    margin-right: 40px;
+    margin-left: 40px;
+    color: var(--gray);
+}
