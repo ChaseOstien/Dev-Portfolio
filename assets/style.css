@@ -92,6 +92,18 @@ nav li {
     line-height: 1.5;
 }
 
+.work-content {
+
+}
+
+.large {
+    border: 5px solid var(--light-blue);
+}
+
+.small {
+    border: 5px solid var(--light-blue);
+}
+
 .contact-me {
     display: flex;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
