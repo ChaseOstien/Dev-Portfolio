@@ -17,9 +17,9 @@ body {
     padding: 0;
 }
 
-h1, h2, h3, {
+/*h1, h2, h3, {
     font-size: 100%;
-}
+}*/
 
 input, select, option, optgroup, textarea, button,
     pre, code {
