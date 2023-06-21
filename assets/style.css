@@ -1,0 +1,341 @@
+:root {
+    /*Create variables for consistent colors and rules in the webpage.*/
+    --light-blue: #93cbcb;
+    --gray: #38343c;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    background-color: lightgray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: var(--gray);
+    min-height: fit-content;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    background-color: var(--light-blue);
+    padding: 10px 10px 10px 50px;
+    color: var(--gray);
+    border-radius: 10px;
+}
+
+.header nav {
+    float: right;
+    justify-content: space-between;
+    margin-right: 50px;
+    font-size: larger;
+    max-width: 200rem;
+}
+
+nav ul {
+    list-style-type: none;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+nav li {
+    display: inline-flex;
+    padding-right: 20px;
+}
+
+.header nav a {
+    color: var(--light-blue);
+    font-weight: 100%;
+    text-decoration: none;
+    border-bottom: 3px solid;
+    padding-bottom: 2px;
+}
+
+.background-image {
+    background-image: url(./images/Background-Image3.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 250px;
+    max-width: 200rem;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    background-color: var(--light-blue);
+    display: flex;
+    width: fit-content;
+    float: right;
+    font-size: 200%;
+    color: var(--gray);
+    margin-right: 50px;
+    margin-top: 185px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.aboutme-content {
+    display: inline-block;
+    margin-right: 80px;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 90%;
+}
+
+.section-title-1 {
+    position: relative;
+    color: var(--gray);
+    font-size: 175%;
+    padding-right: 20px;
+    inline-size: min-content;
+    text-align: right;
+    margin-right: 40px;
+}
+
+.section-title-1 h2 {
+    font-size: 200%;
+    float: inline-start;
+}
+
+.section-title-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    bottom: 0;
+    background-color: var(--gray);
+    }
+
+.aboutme-content p {
+    line-height: 1.5;
+    
+}
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    max-width: 90%;
+}
+
+.section-title-2 {
+    position: relative;
+    display: flex;
+    color: var(--gray);
+    font-size: 100%;
+    padding-right: 20px;
+    inline-size: min-content;
+    margin-right: 40px;
+}
+
+.section-title-2 h2 {
+    font-size: 4rem;
+}
+
+.section-title-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    bottom: 0;
+    background-color: var(--gray);
+}
+
+.large-image {
+    flex-basis: 100%;
+    text-align: center;
+    margin-left: 15px;
+    max-width: 90%;
+    height: auto;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.large-image img { 
+    border: 7px solid var(--light-blue);
+    
+}
+
+#large {
+    filter: brightness(25%);
+    transition: filter 0.5s ease;
+    width: auto;
+}
+
+#large:hover {
+    filter: brightness(100%);
+}
+
+.label1 {
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    background-color: var(--light-blue);
+    color: var(--gray);
+    font-size: 2rem;
+    padding: 10px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.label2 {
+    position: absolute;
+    background-color: var(--light-blue);
+    color: var(--gray);
+    font-size: 2rem;
+    padding: 10px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-basis: 51%;
+    margin-top: 20px;
+    max-width: 100%;
+    position: relative;
+}
+
+.small-image {
+    flex-basis: 50%;
+    text-align: center;
+    margin-left: 15px;
+    max-width: 200rem;
+    height: auto;
+    position: relative;
+}
+
+.small-image img {
+    border: 7px solid var(--light-blue);
+    filter: brightness(25%);
+    transition: filter 0.5s ease;
+    
+    
+}
+
+.small-image img:hover {
+    filter: brightness(100%);
+}
+
+footer {
+    background-color: lightgray;
+    max-width: 100%;
+}
+
+.contact-me {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    max-width: 90%;
+    margin-bottom: 50px;
+}
+
+.section-title-3 {
+    position: relative;
+    color: var(--gray);
+    font-size: 175%;
+    padding-right: 20px;
+    inline-size: min-content;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.section-title-3 h2 {
+    font-size: 200%;
+}
+
+.section-title-3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    bottom: 0;
+    background-color: var(--gray);
+    }
+
+.contact-info {
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 90%;
+}
+
+.contact-info a {
+    text-decoration: none;
+    font-weight: 175%;
+    font-size: larger;
+    border-bottom: 4px solid;
+    padding-bottom: 4px;
+    margin-right: 30px;
+    margin-left: 30px;
+    color: var(--gray);
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .header, .header nav, .work, .row, .section-title-2 { 
+        flex-direction: column;
+        column-count: 1;
+        position: relative;
+        
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .label1, .label2 {
+        flex-direction: column;
+        column-count: 1;
+        position: relative;
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .section-title-2 {
+        margin-bottom: 50px;
+        margin: 0 auto;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .contact-me, .contact-info {
+        flex-direction: column;
+        column-count: 1;
+        flex-wrap: wrap;
+        padding: 10px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #large, #small {
+        width: 85%;
+    }
+}
+
+
