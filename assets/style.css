@@ -7,7 +7,8 @@
 body {
     display: flex;
     flex-direction: column;
-    max-width: 200rem;
+    max-width: 100%;
+    background-color: lightgray;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -89,7 +90,7 @@ nav li {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    max-width: 100%;
+    max-width: 90%;
 }
 
 .section-title-1 {
@@ -104,6 +105,7 @@ nav li {
 
 .section-title-1 h2 {
     font-size: 200%;
+    float: inline-start;
 }
 
 .section-title-1::before {
@@ -118,31 +120,30 @@ nav li {
 
 .aboutme-content p {
     line-height: 1.5;
-    width: auto;
+    
 }
 
 .work {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: auto;
     margin-bottom: 40px;
     margin-top: 40px;
-    max-width: 100%;
+    max-width: 90%;
 }
 
 .section-title-2 {
     position: relative;
+    display: flex;
     color: var(--gray);
-    font-size: 175%;
+    font-size: 100%;
     padding-right: 20px;
     inline-size: min-content;
-    text-align: right;
     margin-right: 40px;
 }
 
 .section-title-2 h2 {
-    font-size: 200%;
+    font-size: 4rem;
 }
 
 .section-title-2::before {
@@ -153,35 +154,28 @@ nav li {
     width: 4px;
     bottom: 0;
     background-color: var(--gray);
-    }
-
-/*.content {
-    flex: .5;
-}*/
+}
 
 .large-image {
     flex-basis: 100%;
     text-align: center;
     margin-left: 15px;
-    max-width: 200rem;
+    max-width: 90%;
+    height: auto;
     position: relative;
     cursor: pointer;
+    display: inline-block;
 }
-
-/*.large-image:hover {
-    filter: brightness(100%);
-    
-}*/
 
 .large-image img { 
     border: 7px solid var(--light-blue);
-    max-width: 80%;
-    height: auto;
+    
 }
 
 #large {
     filter: brightness(25%);
     transition: filter 0.5s ease;
+    width: auto;
 }
 
 #large:hover {
@@ -189,27 +183,28 @@ nav li {
 }
 
 .label1 {
-    background-color: var(--light-blue);
-    font-size: 200%;
-    color: var(--gray);
     position: absolute;
+    bottom: 30px;
+    left: 0px;
+    background-color: var(--light-blue);
+    color: var(--gray);
+    font-size: 2rem;
     padding: 10px;
-    top: 0;
-    margin-top: 330px;
-    margin-left: 270px;
-    z-index: 1;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .label2 {
-    background-color: var(--light-blue);
-    font-size: 200%;
-    color: var(--gray);
     position: absolute;
+    background-color: var(--light-blue);
+    color: var(--gray);
+    font-size: 2rem;
     padding: 10px;
-    top: 0;
-    margin-top: 85px;
-    margin-left: 0px;
-    z-index: 1;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 30px;
 }
 
 .row {
@@ -227,6 +222,7 @@ nav li {
     margin-left: 15px;
     max-width: 200rem;
     height: auto;
+    position: relative;
 }
 
 .small-image img {
@@ -234,10 +230,16 @@ nav li {
     filter: brightness(25%);
     transition: filter 0.5s ease;
     
+    
 }
 
 .small-image img:hover {
     filter: brightness(100%);
+}
+
+footer {
+    background-color: lightgray;
+    max-width: 100%;
 }
 
 .contact-me {
@@ -245,9 +247,8 @@ nav li {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     justify-content: center;
     align-items: center;
-    margin: auto;
     margin-top: 20px;
-    max-width: 100%;
+    max-width: 90%;
     margin-bottom: 50px;
 }
 
@@ -280,6 +281,7 @@ nav li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    max-width: 90%;
 }
 
 .contact-info a {
@@ -291,12 +293,48 @@ nav li {
     margin-right: 30px;
     margin-left: 30px;
     color: var(--gray);
+    margin-top: 10px;
 }
 
-@media screen and (max-width: 900px) {
-    header, body, footer, nav, .row { 
+@media screen and (max-width: 1000px) {
+    .header, .header nav, .work, .row, .section-title-2 { 
         flex-direction: column;
         column-count: 1;
+        position: relative;
+        
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .label1, .label2 {
+        flex-direction: column;
+        column-count: 1;
+        position: relative;
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .section-title-2 {
+        margin-bottom: 50px;
+        margin: 0 auto;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .contact-me, .contact-info {
+        flex-direction: column;
+        column-count: 1;
+        flex-wrap: wrap;
+        padding: 10px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #large, #small {
+        width: 85%;
     }
 }
 
