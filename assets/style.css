@@ -333,7 +333,7 @@ footer {
 }
 
 @media only screen and (max-width: 1000px) {
-    #large, #small {
+    #large, .small {
         width: 85%;
     }
 }
