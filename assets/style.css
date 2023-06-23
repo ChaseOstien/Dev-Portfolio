@@ -334,8 +334,9 @@ footer {
         margin-top: 10px;
     }
 
-    #large,
-    .small {
+
+@media only screen and (max-width: 1000px) {
+    #large, .small {
         width: 85%;
     }
 
