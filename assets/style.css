@@ -1,9 +1,10 @@
 :root {
-    /*Create variables for consistent colors and rules in the webpage.*/
+    /*Variables for consistent colors and rules in the webpage.*/
     --light-blue: #93cbcb;
     --gray: #38343c;
 }
 
+/*General body CSS properties*/
 body {
     display: flex;
     flex-direction: column;
@@ -12,6 +13,7 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/*General header CSS rules*/
 .header {
     display: flex;
     justify-content: space-between;
@@ -29,6 +31,7 @@ body {
     border-radius: 10px;
 }
 
+/*Nav CSS properties*/
 .header nav {
     float: right;
     justify-content: space-between;
@@ -50,12 +53,12 @@ nav li {
 
 .header nav a {
     color: var(--light-blue);
-    font-weight: 100%;
     text-decoration: none;
     border-bottom: 3px solid;
     padding-bottom: 2px;
 }
 
+/*Main banner image and subtitle*/
 .background-image {
     background-image: url(./images/Background-Image3.png);
     background-size: cover;
@@ -78,6 +81,7 @@ nav li {
     border-radius: 10px;
 }
 
+/*About me section*/
 .aboutme-content {
     display: inline-block;
     margin-right: 80px;
@@ -123,6 +127,7 @@ nav li {
     
 }
 
+/*Work section, includes images*/
 .work {
     display: flex;
     flex-wrap: wrap;
@@ -237,11 +242,13 @@ nav li {
     filter: brightness(100%);
 }
 
+/*General footer CSS rules*/
 footer {
     background-color: lightgray;
     max-width: 100%;
 }
 
+/*Contact me section*/
 .contact-me {
     display: flex;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -286,7 +293,6 @@ footer {
 
 .contact-info a {
     text-decoration: none;
-    font-weight: 175%;
     font-size: larger;
     border-bottom: 4px solid;
     padding-bottom: 4px;
@@ -296,45 +302,46 @@ footer {
     margin-top: 10px;
 }
 
+/*Media query set up for when pictures begin to shrink from set size*/
 @media screen and (max-width: 1000px) {
-    .header, .header nav, .work, .row, .section-title-2 { 
+    .header,
+    .header nav,
+    .work,
+    .row,
+    .section-title-2,
+    .label1,
+    .label2,
+    .contact-me,
+    .contact-info,
+    #large,
+    .small {
         flex-direction: column;
         column-count: 1;
         position: relative;
-        
     }
-}
 
-@media screen and (max-width: 1000px) {
-    .label1, .label2 {
-        flex-direction: column;
-        column-count: 1;
-        position: relative;
-        width: fit-content;
-    }
-}
-
-@media screen and (max-width: 1000px) {
     .section-title-2 {
         margin-bottom: 50px;
-        margin: 0 auto;
         align-items: center;
     }
-}
 
-@media screen and (max-width: 1000px) {
-    .contact-me, .contact-info {
+    .contact-me,
+    .contact-info {
         flex-direction: column;
         column-count: 1;
         flex-wrap: wrap;
         padding: 10px;
         margin-top: 10px;
     }
-}
+
 
 @media only screen and (max-width: 1000px) {
     #large, .small {
         width: 85%;
+    }
+
+    .label1, .label2 {
+        width: fit-content;
     }
 }
 
