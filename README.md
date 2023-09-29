@@ -12,7 +12,7 @@ No installation needed, this webpage is hosted on github pages.
 
 Screenshot of refactored webpage. 
 
-![Screenshot of refactored webpage.](./assets/images/ScreenshotUpdate.png)
+![Screenshot of refactored webpage.](./assets/images/Screenshot3.png)
 
 Link to the deployed site:
 
